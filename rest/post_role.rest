@@ -1,0 +1,24 @@
+###
+//Will add mentioned roles or assign default OWNER Role
+POST http://localhost:8888/role HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkZW1vIiwiZXhwIjoxNTc5MTA4ODY3LCJpYXQiOjE1NzkwNzI4Njd9.bRn8kf6bcnZkzVWqrL3SfkRCDV9xvZMqWvjWRzFXke0
+
+{
+	"role":"TEST",
+	"description":"This is for TEST"
+}
+
+###
+###
+//With out Roles you need to add OWNER role to get it up
+//And to add more roles you have to add admin role with one user
+//and then add other roles by getting Bearer token of ADMIN USER
+POST http://localhost:8888/role HTTP/1.1
+content-type: application/json
+
+{
+	"role":"OWNER",
+	"description":"This is for OWNER"
+}
+###

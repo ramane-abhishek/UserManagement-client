@@ -1,0 +1,43 @@
+.parent
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: 1fr 9fr
+  grid-column-gap: 0px
+  grid-row-gap: 0px
+  
+
+
+.search
+  grid-area: 1 / 1 / 2 / 2
+  display: grid
+  grid-template-columns: 9fr 1fr
+  grid-template-rows: 1fr
+  grid-column-gap: 20px
+  grid-row-gap: 0px
+  padding: 5px
+  background: #FFFFFF
+  .search_bar_div
+    grid-area: 1 / 1 / 2 / 2
+    height: 40px
+    background: #F5F8FA
+    border-radius: 4px
+
+
+  .notification_bar_div
+    grid-area: 1 / 2 / 2 / 3
+.main
+  grid-area: 2 / 1 / 3 / 2
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  grid-template-rows: 1fr
+  grid-column-gap: 40px
+  grid-row-gap: 0px
+  .task_due
+    grid-area: 1 / 1 / 2 / 2
+    left: 0px
+    right: 0px
+    top: 0px
+    background-color: green
+  .deal_task_chart
+    grid-area: 1 / 2 / 2 / 3
+    background-color: red

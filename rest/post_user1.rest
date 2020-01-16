@@ -1,0 +1,10 @@
+POST http://localhost:8888/signup HTTP/1.1
+content-type: application/json
+
+{
+	"username":"demo3",
+	"password":"demo3@123",
+  "roleIds":[1,2]
+}
+
+//Will add mentioned roles or assign default OWNER Role
